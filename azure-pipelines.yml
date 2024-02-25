@@ -8,8 +8,10 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '<Enter-your-connection-id>'
-
+  azureServiceConnection: '<name-provided-toservice-connection>'
+  subscriptionId: '<your-service-connection>'
+  resourcegroup: '<resource-group-of-project'
+  
   # Web app name
   webAppName: '<enter-your-webpp-app-name>'
 
@@ -17,7 +19,7 @@ variables:
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'K21Academy'
+  environmentName: '<enter-your-webapp-name>'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
